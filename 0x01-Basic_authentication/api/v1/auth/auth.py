@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 from typing import List, TypeVar
 from flask import request
+"""Auth module"""
+
 
 class Auth:
+    """ Auth class
+    """
+
     def require_auth(self, path: str, excluded_paths: List[str]) -> bool:
         """ Determines if authentication is required. """
         return False
